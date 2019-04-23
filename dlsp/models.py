@@ -1,11 +1,12 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from tinymce import HTMLField
 
 
 class Page(models.Model):
     title = models.CharField(max_length=200, primary_key=True)
-    info = models.TextField()
+    info = HTMLField()
 
     def __str__(self):
         return self.title
@@ -14,7 +15,7 @@ class Page(models.Model):
 class SiteInfo(models.Model):
     title = models.CharField(max_length=200, primary_key=True)
     page = models.ForeignKey(Page, on_delete=models.CASCADE)
-    value = models.TextField()
+    value = HTMLField()
 
     def __str__(self):
         return self.title
@@ -37,3 +38,8 @@ class Program(models.Model):
 
     def __str__(self):
         return self.name
+
+class Image(models.Model):
+    name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='images/%Y/%m/%d/')
+

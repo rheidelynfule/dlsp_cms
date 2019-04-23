@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Admission - {{ site.school_name }}{% endblock %}
+{% block content %}
+<div class="parallax-container center valign-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 white-text">
+                    <h2 class="teal-text teal-text lighten-2">Admission</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ image.url }}"></div>
+    </div>
+<div class="container">
+    {{ admission|safe }}
+</div>
+{% endblock %}

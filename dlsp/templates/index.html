@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ site.school_name }}{% endblock %}
+{% block content %}
+    <!-- banner -->
+    <div class="parallax-container center valign-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 white-text">
+                    <h2 class="teal-text teal-text lighten-2">{{ site.school_name }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ image.url }}"></div>
+    </div>
+
+    <!-- banner close -->
+
+    <!-- introduction -->
+    <div class="intro teal darken-3">
+        <div class="container">
+            <h5>{{ data.info | safe }}
+            </h5>
+        </div>
+    </div>
+
+    <!-- close introduction -->
+
+    <!-- container begin for main -->
+    <div class="container">
+        <!-- container -->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Admissions</span>
+                        <p>{{ data.admission_info|truncatewords:50|safe }}.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Programs</span>
+                        <p>{{ data.programs_info|truncatewords:50|safe }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row end -->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">About Us</span>
+                        <p>{{ data.about_info|truncatewords:50|safe }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Contact Us</span>
+                        <p>{{ data.contactus_info|truncatewords:50|safe }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row end -->
+
+        <!-- container close -->
+    </div>
+    <!-- <div class="container"> -->
+{% endblock %}

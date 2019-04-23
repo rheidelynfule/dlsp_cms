@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/materialize.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper green darken-2">
+            <div class="container">
+                <a href="/" class="brand-logo">{{ site.school  }}</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/admission">Admission</a></li>
+                    <li><a href="/programs">Programs</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% block content %}{% endblock %}
+ <footer class="page-footer green lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">{{ site.school_name }}</h5>
+                    <p class="grey-text text-lighten-4">{{ site.address }}</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/admission">Admission</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/programs">Programs</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 {{ site.school_name }}
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/materialize.min.js" %}"></script>
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+
+</html>
