@@ -1,4 +1,4 @@
-venv
-dlsp/__pycache__
-__pycache__
-.idea
+/venv
+/dlsp/__pycache__
+/__pycache__
+/.idea
