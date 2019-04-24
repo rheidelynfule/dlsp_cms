@@ -1,15 +1,9 @@
 from django.shortcuts import render
-from .models import Page, Program,SiteInfo, Department, Image
+from .models import Page, SiteInfo, Department, Image
 
 school_name = SiteInfo.objects.get(title="school_name").value
 school = SiteInfo.objects.get(title="school").value
 address = SiteInfo.objects.get(title="address").value
-
-home_info = Page.objects.get(title="Home").info
-admission_info = Page.objects.get(title="Admission").info
-programs_info = Page.objects.get(title="Programs").info
-about_info = Page.objects.get(title="About").info
-contactus_info = Page.objects.get(title="Contact Us").info
 
 site = {"school_name": school_name,
         "address": address,
@@ -17,6 +11,11 @@ site = {"school_name": school_name,
 
 
 def index(request):
+    home_info = Page.objects.get(title="Home").info
+    admission_info = Page.objects.get(title="Admission").info
+    programs_info = Page.objects.get(title="Programs").info
+    about_info = Page.objects.get(title="About").info
+    contactus_info = Page.objects.get(title="Contact Us").info
     image = Image.objects.get(name='home').image
     data ={
         "info": home_info,
