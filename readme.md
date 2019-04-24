@@ -1,8 +1,9 @@
-#School Website Content Management System
+# School Website Content Management System
+
 ---
-###Front-end
+### Front-end
 Framework: Materializecss
-###Back-end
+### Back-end
 Language: Python
 <br/>
 Framework: Django
@@ -10,20 +11,20 @@ Framework: Django
 Database: SQLite3
 <br/>
 Web Server: Gunicorn with Nginx
-###Deployment
+### Deployment
 Amazon AWS EC2
 <br/>
 Public DNS: http://ec2-34-229-156-224.compute-1.amazonaws.com/
 
 ---
-#Manageable Content Areas
+# Manageable Content Areas
 * Homepage
 * Admission
 * Programs
 * About
 * Contact Us
 
-#Admin Area
+# Admin Area
 * Site Information
 * Page Information
 * Departments
