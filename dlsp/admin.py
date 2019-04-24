@@ -5,4 +5,7 @@ admin.site.register(Page)
 admin.site.register(SiteInfo)
 admin.site.register(Department)
 admin.site.register(Program)
-admin.site.register(Image)
+
+@admin.register(Image)
+class ImageAdmin(admin.ModelAdmin):
+    list_display = ('name',)
