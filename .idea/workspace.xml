@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70839376-cbbc-4d51-a603-1e55279aaa3f" name="Default Changelist" comment="" />
+    <list default="true" id="70839376-cbbc-4d51-a603-1e55279aaa3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/dlsp_cms/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dlsp_cms/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlsp_cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dlsp_cms/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +16,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dlsp_cms/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="123" column="11" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dlsp_cms/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+              <folding>
+                <element signature="e#632#664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,7 +60,6 @@
         <option value="$PROJECT_DIR$/dlsp/templates/dlsp/index.html" />
         <option value="$PROJECT_DIR$/dlsp/static/programs.html" />
         <option value="$PROJECT_DIR$/dlsp/admin.py" />
-        <option value="$PROJECT_DIR$/dlsp_cms/urls.py" />
         <option value="$PROJECT_DIR$/dlsp/models.py" />
         <option value="$PROJECT_DIR$/dlsp/templates/index.html" />
         <option value="$PROJECT_DIR$/dlsp/static/css/style.css" />
@@ -45,9 +68,10 @@
         <option value="$PROJECT_DIR$/dlsp/templates/contactus.html" />
         <option value="$PROJECT_DIR$/dlsp/templates/programs.html" />
         <option value="$PROJECT_DIR$/dlsp/views.py" />
-        <option value="$PROJECT_DIR$/dlsp_cms/settings.py" />
         <option value="$PROJECT_DIR$/dlsp/templates/base.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/dlsp_cms/settings.py" />
+        <option value="$PROJECT_DIR$/dlsp_cms/urls.py" />
       </list>
     </option>
   </component>
@@ -74,6 +98,11 @@
               <item name="dlsp_cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="dlsp_cms" type="462c0819:PsiDirectoryNode" />
               <item name="dlsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlsp_cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlsp_cms" type="462c0819:PsiDirectoryNode" />
+              <item name="dlsp_cms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,15 +180,16 @@
       <updated>1555990144820</updated>
       <workItem from="1555990233280" duration="20532000" />
       <workItem from="1556031677982" duration="1937000" />
-      <workItem from="1556066753785" duration="435000" />
+      <workItem from="1556066753785" duration="824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22904000" />
+    <option name="totallyTimeSpent" value="23293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -217,16 +247,6 @@
     <entry file="file://$PROJECT_DIR$/dlsp/urls.py" />
     <entry file="file://$PROJECT_DIR$/dlsp/static/programs.html" />
     <entry file="file://$PROJECT_DIR$/dlsp/admin.py" />
-    <entry file="file://$PROJECT_DIR$/dlsp_cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dlsp/models.py" />
     <entry file="file://$PROJECT_DIR$/dlsp/static/css/style.css" />
     <entry file="file://$PROJECT_DIR$/dlsp/templates/index.html" />
@@ -260,17 +280,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dlsp_cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dlsp_cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="123" column="11" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dlsp_cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
